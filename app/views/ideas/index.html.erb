@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <h1>Your list of ideas</h1>
+    <p>
+      <a href="/new_idea">Create a new idea</a>
+    </p>
+    <div class="list-group">
+      <%@ideas.each do |idea|%>
+        <a href="/ideas/<%=idea.id%>" class="list-group-item"><%=idea.idea%></a>
+      <%end%>
+    </div>
+  </div>
+</div>
+
+
